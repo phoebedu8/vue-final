@@ -1,0 +1,19 @@
+.contact-img {
+    min-height: 200px;
+    height: auto;
+    background-image: url('@/assets/images/contact-banner-m.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+}
+
+@media (min-width: 769px) {
+    .contact-img {
+        height: 300px;
+        background-image: url('@/assets/images/contact-banner.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

@@ -1,0 +1,15 @@
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/products';
+@import 'pages/productid';
+@import 'pages/cart';
+
+@import 'component/NavbarUser.scss';
+@import 'component/footer.scss';
+
+
+
+.main {
+    min-height: calc(100vh - 60px);
+}

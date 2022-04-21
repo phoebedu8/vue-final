@@ -1,0 +1,65 @@
+.dropdown-toggle::after {
+    display: none !important;
+}
+.navbar-collapse{
+    background-color: #F4585E;
+    padding: 0;
+}
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #FF909F;
+    .container-fluid{
+        padding: 0;
+    }
+    .cart-icon{
+        position: absolute;
+        top: 12px;
+        right: 20px;
+    }
+    .hamburger-icon{
+        position: relative;
+        right: 40px;
+    }
+    .cart-dropdown-content{
+        width:300px;
+        top: 45px;
+        right: -20px;
+    }
+    .navbar-nav a{
+        padding: 10px 0;
+    }
+}
+
+
+.nav-cart {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-text{
+    color: #fff;
+    text-shadow: 0 0 5px  rgba(0,0,0,0.5);
+}
+.nav-text:hover{
+    color: #60131e;
+    text-shadow: none;
+}
+.nav-text-line{
+    color: #ffc1ca;
+}
+
+@media (min-width: 768px) {
+    .nav-cart {
+        position: absolute;
+        right: 20px;
+    }
+    .navbar-collapse{
+        background-color: #FF909F;
+    }
+    .navbar-nav a{
+        padding: initial;
+    }
+}

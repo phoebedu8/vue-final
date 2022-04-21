@@ -1,0 +1,23 @@
+.about-img {
+    min-height: 200px;
+    height: auto;
+    background-image: url('@/assets/images/about-banner-m.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+}
+
+.about-title {
+    display: none;
+}
+
+@media (min-width: 769px) {
+    .about-img {
+        height: 300px;
+        background-image: url('@/assets/images/about-banner.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
