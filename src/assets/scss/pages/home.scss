@@ -1,11 +1,22 @@
+.kv{
+    background-color: #FF909F;
+    border-top:1px solid #fff;
+    background: linear-gradient(180deg, #FF909F 50%, #F97384 100%);
+}
+.main-kv{
+    width: 80%;
+}
+.kv-group{
+    width: 50%;
+}
+
 .series-icecream-bg{
     height: 300px;
     background-color: #000;
-    background-position: 0 50%;
     background-size: contain;
     background-attachment: fixed;
     background-repeat: repeat-y;
-    background-image: url(@/assets/images/series-icecream-bg.png);
+    background-image: url('@/assets/images/series-icecream-bg.png');
 }
 
 .series-popsicle-bg{
@@ -14,7 +25,7 @@
     background-size: contain;
     background-attachment: fixed;
     background-repeat: repeat-y;
-    background-image: url(@/assets/images/series-popsicle-bg.png);
+    background-image: url('@/assets/images/series-popsicle-bg.png');
 }
 
 .series-smoothie-bg{
@@ -23,13 +34,11 @@
     background-size: contain;
     background-attachment: fixed;
     background-repeat: repeat-y;
-    background-image: url(@/assets/images/series-smoothie-bg.png);
+    background-image: url('@/assets/images/series-smoothie-bg.png');
 }
 
 .series-group{
     position: relative;
-    // border-radius: 30px;
-
 }
 
 
@@ -216,6 +225,13 @@ hr.series-line{
     background-color: rgb(151, 151, 151);
 }
 
+.bug-page{
+    min-height: 100vh;
+}
+.me{
+    width: 75%;
+}
+
 @media (min-width: 769px) {
     .series-bg{
         position: absolute;
@@ -258,16 +274,21 @@ hr.series-line{
     text-align: center;
 }
 
-.kv-title01 {
+.kv-title-main {
     font-size: 60px;
 }
 
-.kv-title02 {
+.kv-title-sub {
     font-size: 40px;
 }
 
-.kv-title03 {
+.kv-title-text {
     font-size: 28px;
+    color: #FFDD9B;
+}
+.kv-btn{
+    background-color: #FFDD9B; 
+    padding: 10px 70px;
 }
 
 .series01,
@@ -298,22 +319,6 @@ hr.series-line{
     background-size: cover;
 }
 
-.kv01 {
-    width: 70%;
-    max-width: 380px;
-}
-
-.kv-bar {
-    position: absolute;
-    width: 40%;
-    bottom: 0px;
-    left: 0;
-}
-
-.kv-bar-img {
-    display: none;
-}
-
 @media (min-width: 576px) {
 
     .series01,
@@ -323,48 +328,25 @@ hr.series-line{
         height: 500px;
     }
 
-    .kv-title01 {
+    .kv-title-main{
         font-size: 50px;
     }
 
-    .kv-title02 {
+    .kv-title-sub {
         font-size: 30px;
     }
 
-    .kv-title03 {
+    .kv-title-text {
         font-size: 28px;
     }
 }
 
 @media (min-width: 1025px) {
-
     .series01-text,
     .series03-text {
         margin-left: 150px;
     }
-
     .series02-text {
         margin-right: 150px;
-    }
-
-    .kv-bar {
-        position: absolute;
-        width: 40%;
-        bottom: 0px;
-        left: 0;
-    }
-
-    .kv-bar img {
-        display: block;
-        width: 100%;
-    }
-
-    .kv01 {
-        width: 70%;
-        max-width: 450px;
-    }
-
-    .kv {
-        height: calc(100vh - 60px);
     }
 }

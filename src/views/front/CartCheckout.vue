@@ -21,7 +21,7 @@
           <li class="d-flex flex-column align-items-center">
             <div class="d-flex align-items-center justify-content-center circle rounded-circle mb-2 circle-active"> 3
             </div>
-            <p style="color:#e25c5c;">確認訂單</p>
+            <p class="process">確認訂單</p>
           </li>
           <li class="d-flex flex-column align-items-center">
             <div class="d-flex align-items-center justify-content-center circle rounded-circle mb-2"> 4 </div>
@@ -32,21 +32,21 @@
       </div>
     </div>
     <div class="container rounded my-5">
-      <div class="row cart-title d-flex align-items-center justify-content-center rounded-top" style="height:40px;">
+      <div class="row cart-title-bar cart-title d-flex align-items-center justify-content-center rounded-top">
         <div class="col d-flex align-items-center justify-content-center text-white">STEP 3 : 確認訂單</div>
       </div>
       <div class="row py-3 justify-content-center align-items-top border" @click.prevent="payOrder">
         <div class="col-12 col-md-6">
           <table class="table align-middle">
             <thead>
-              <th style="width: 170px">產品</th>
+              <th class="cart-table-img">產品</th>
               <th>品名</th>
               <th>數量</th>
               <th class="text-end">價錢</th>
             </thead>
             <tbody class="border-top">
               <tr v-for="item in order.products" :key="item.id">
-                <td><img :src="item.product.imageUrl" alt="" class="picture"></td>
+                <td><img :src="item.product.imageUrl" alt="item.title" class="picture"></td>
                 <td>{{ item.product.title }}</td>
                 <td>{{ item.qty }}/{{ item.product.unit }}</td>
                 <td class="text-end">NT${{ item.final_total }}</td>
@@ -137,11 +137,6 @@ export default {
           emitter.emit('get-cart')
           this.$router.push(`/final/${this.orderId}`)
           this.isLoading = false
-          this.$swal({
-            title: '付款成功',
-            icon: 'success',
-            confirmButtonColor: '#dc3545'
-          })
         })
         .catch((error) => {
           this.isLoading = false

@@ -5,7 +5,9 @@
     background-color: #F4585E;
     padding: 0;
 }
-
+.nav-logo{
+    width:150px;
+}
 .navbar {
     padding-top: 0;
     padding-bottom: 0;
@@ -30,9 +32,12 @@
     .navbar-nav a{
         padding: 10px 0;
     }
+    
 }
 
-
+.nav-product-img{
+    width:80px
+}
 .nav-cart {
     position: relative;
     margin: 0 auto;
@@ -51,6 +56,10 @@
     color: #ffc1ca;
 }
 
+.navbar-light .navbar-brand {
+    color: #a82d2d;
+  }
+
 @media (min-width: 768px) {
     .nav-cart {
         position: absolute;
@@ -62,4 +71,7 @@
     .navbar-nav a{
         padding: initial;
     }
+    .logout{
+        position: absolute;
+      }
 }

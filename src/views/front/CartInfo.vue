@@ -17,7 +17,7 @@
           <li class="d-flex flex-column align-items-center">
             <div class="d-flex align-items-center justify-content-center circle rounded-circle mb-2 circle-active"> 2
             </div>
-            <p style="color:#e25c5c;">填寫資訊</p>
+            <p class="process">填寫資訊</p>
           </li>
           <li class="d-flex flex-column align-items-center">
             <div class="d-flex align-items-center justify-content-center circle rounded-circle mb-2"> 3 </div>
@@ -32,7 +32,7 @@
       </div>
     </div>
     <div class="container rounded my-5">
-      <div class="row cart-title d-flex align-items-center justify-content-center rounded-top" style="height:40px;">
+      <div class="row cart-title-bar cart-title d-flex align-items-center justify-content-center rounded-top">
         <div class="col d-flex align-items-center justify-content-center text-white">STEP 2 : 填寫資訊</div>
       </div>
       <div class="row py-3 justify-content-center border d-none d-md-block">

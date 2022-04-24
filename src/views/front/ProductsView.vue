@@ -43,7 +43,7 @@
       <div class="col" v-for="item in products" :key="item.id">
         <div class="card">
           <router-link :to="`/product/${ item.id }`" class="card-img card-img-rotate">
-            <img :src="item.imageUrl" class="card-img-top rounded-3" alt="">
+            <img :src="item.imageUrl" class="card-img-top rounded-3" alt="item.title">
             <div class="card-body">
               <h5 class="card-title">{{ item.title }}</h5>
               <p class="card-text">NT${{ item.price }}

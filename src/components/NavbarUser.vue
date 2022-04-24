@@ -1,10 +1,17 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light sticky-top sticky-md-top" >
     <div class="container-fluid " >
-      <router-link to="/" class="navbar-brand logo-title"> <img style="width:150px;"
-          src="https://storage.googleapis.com/vue-course-api.appspot.com/xqrass-hexschool/1648890692897.png?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=KlZJiIkkzMqmBv60JVpt%2B0h%2FdJj8qmITNBwUQxpMmf%2BUhTFAdVyAfNQGpEg%2Bx5JN2xeCxCPN9fwrJWkyCLeU0CuQ%2F3SvZF9rvTaHOD9fyEMfdtMz61mvo%2BoBlBN8RnzkEV6hOqhzYVlstD1tnlexL6kZitv92WJoJkPhVvDZtdg5Gr72foTsnruJ2YQVRQjIi6gkBYIYNignqWNtftAmncBKRCccukxZPKQ7fayyfL8Tur19h8UhoDrRk6Ot4OrN%2BfDwfx7%2Fzsty2TublKnbUvC0CHjvnXwpvlKY8gPpBjAqPunGvF2AU%2BlCE5eOs5OZiXdWeo51gn27Z8WNVzlusQ%3D%3D"
-          alt=""></router-link>
-      <button ref="navbarBtn" class="hamburger-icon navbar-toggler border-0" type="button" @click="openNav">
+      <router-link to="/" class="navbar-brand logo-title">
+        <img
+          class="nav-logo"
+          src="@/assets/images/logo.png"
+          alt="nav-logo">
+      </router-link>
+      <button
+        ref="navbarBtn"
+        class="hamburger-icon navbar-toggler border-0"
+        type="button"
+        @click="openNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" ref="navbarcollapse" id="navbarNavAltMarkup" :class="toggleNav ? 'show' : ''">
@@ -38,7 +45,7 @@
               v-else
               class="d-flex m-2 align-items-center position-relative border-bottom pb-2"
               >
-                <img :src="item.product.imageUrl" alt="" style="width:80px">
+                <img :src="item.product.imageUrl" alt="item.title" class="nav-product-img">
                 <div class="ms-2">
                   <p class="m-0">{{ item.product.title }}</p>
                   <p class="m-0">NT${{ item.product.price }}

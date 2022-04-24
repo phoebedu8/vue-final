@@ -25,15 +25,14 @@
           <li class="d-flex flex-column align-items-center">
             <div class="d-flex align-items-center justify-content-center circle rounded-circle mb-2 circle-active"> 4
             </div>
-            <p style="color:#e25c5c;">完成購物</p>
+            <p class="process">完成購物</p>
           </li>
         </ul>
         <div class="line position-absolute"></div>
       </div>
     </div>
     <div class="container rounded my-5">
-      <div class="row mx-1 mx-md-0 cart-title d-flex align-items-center justify-content-center rounded-top"
-        style="height:40px;">
+      <div class="row cart-title-bar mx-1 mx-md-0 cart-title d-flex align-items-center justify-content-center rounded-top">
         <div class="col d-flex align-items-center justify-content-center text-white">STEP 4 : 完成購物</div>
       </div>
       <div class="row mx-1 py-3 mx-md-0 border">

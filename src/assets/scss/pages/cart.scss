@@ -7,7 +7,12 @@
     background-size: cover;
     background-color: #000;
 }
-
+.process{
+    color:#e25c5c;
+}
+.cart-title-bar{
+    height:40px;
+}
 
 tbody {
     border-top: none !important;
@@ -52,6 +57,10 @@ tfoot {
 
 .cart-title {
     background-color: #e25c5c;
+}
+
+.cart-table-img{
+    width: 170px;
 }
 
 @media (min-width: 576px) {

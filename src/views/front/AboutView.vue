@@ -10,7 +10,7 @@
     </h2>
     <div class="row d-flex justify-content-center">
       <div class="col-lg-3 my-3 mx-lg-4">
-        <img src="@/assets/images/me.png" class="w-100 rounded-circle" alt="">
+        <img src="@/assets/images/me.png" class="w-100 rounded-circle" alt="brand-img">
       </div>
       <div class="col-lg-5 d-flex align-items-center mx-lg-4">
         <p class="lh-lg text-secondary">
@@ -29,7 +29,7 @@
     </h2>
     <div class="row row-cols-1 row-cols-lg-3 g-4 g-lg-5">
       <div class="col">
-        <img src="@/assets/images/fruits.png" class="w-75 d-block mx-auto rounded-circle" alt="">
+        <img src="@/assets/images/fruits.png" class="w-75 d-block mx-auto rounded-circle" alt="natural-food">
         <h5 class="text-center text-danger mt-4">嚴選天然食材</h5>
         <p class="text-secondary card-text lh-lg text-center">
           堅持使用農種植的天然食材，<br>
@@ -38,7 +38,7 @@
         </p>
       </div>
       <div class="col">
-        <img src="@/assets/images/butter.png" class="w-75 d-block mx-auto rounded-circle" alt="">
+        <img src="@/assets/images/butter.png" class="w-75 d-block mx-auto rounded-circle" alt="unburdened-delicious">
         <h5 class="text-center text-danger mt-4">無負擔的美味</h5>
         <p class="text-secondary card-text lh-lg text-center">
           使用低卡奶油，嚴選有機雞蛋，<br>
@@ -47,7 +47,7 @@
         </p>
       </div>
       <div class="col">
-        <img src="@/assets/images/water.png" class="w-75 d-block mx-auto rounded-circle" alt="">
+        <img src="@/assets/images/water.png" class="w-75 d-block mx-auto rounded-circle" alt="clean-water">
         <h5 class="text-center text-danger mt-4">純淨RO水</h5>
         <p class="text-secondary card-text lh-lg text-center">
           使用RO過濾水製冰，<br>

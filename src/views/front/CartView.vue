@@ -12,7 +12,7 @@
           <li class="d-flex flex-column align-items-center">
             <div class="d-flex align-items-center justify-content-center circle rounded-circle mb-2 circle-active">
               1 </div>
-            <p style="color:#e25c5c;">購物車</p>
+            <p class="process">購物車</p>
           </li>
           <li class="d-flex flex-column align-items-center">
             <div class="d-flex align-items-center justify-content-center circle rounded-circle mb-2"> 2 </div>
@@ -31,8 +31,7 @@
       </div>
     </div>
     <div class="container rounded my-5 ">
-      <div class="row cart-title d-flex align-items-center justify-content-center rounded-top"
-        style="height:40px;">
+      <div class="row cart-title-bar cart-title d-flex align-items-center justify-content-center rounded-top">
         <div class="col d-flex align-items-center justify-content-center text-white">STEP 1 : 購物車</div>
       </div>
       <!-- 購物車列表 -->
@@ -66,7 +65,7 @@
                     </button>
                   </div>
                   <div class="col-2">
-                    <img :src="item.product.imageUrl" alt="" class="img-fluid text-center">
+                    <img :src="item.product.imageUrl" alt="item.title" class="img-fluid text-center">
                   </div>
                   <div class="col align-items-center">
                     <div class="mb-2">{{ item.product.title }}</div>
@@ -130,7 +129,7 @@
             <template v-for="item in cart.carts" :key="item.id">
               <div class="row align-items-center">
                 <div class="col-4">
-                  <img :src="item.product.imageUrl" alt="" class="img-fluid">
+                  <img :src="item.product.imageUrl" alt="item.title" class="img-fluid">
                 </div>
                 <div class="col-8 d-flex align-self-center">
                   <div>

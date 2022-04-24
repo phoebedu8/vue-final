@@ -1,8 +1,8 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FDB0BA;">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <div class="d-flax algin-items-center">
-        <router-link to="/admin" class="navbar-brand logo-title"><img style="width:100px;" src="https://storage.googleapis.com/vue-course-api.appspot.com/xqrass-hexschool/1648890692897.png?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=KlZJiIkkzMqmBv60JVpt%2B0h%2FdJj8qmITNBwUQxpMmf%2BUhTFAdVyAfNQGpEg%2Bx5JN2xeCxCPN9fwrJWkyCLeU0CuQ%2F3SvZF9rvTaHOD9fyEMfdtMz61mvo%2BoBlBN8RnzkEV6hOqhzYVlstD1tnlexL6kZitv92WJoJkPhVvDZtdg5Gr72foTsnruJ2YQVRQjIi6gkBYIYNignqWNtftAmncBKRCccukxZPKQ7fayyfL8Tur19h8UhoDrRk6Ot4OrN%2BfDwfx7%2Fzsty2TublKnbUvC0CHjvnXwpvlKY8gPpBjAqPunGvF2AU%2BlCE5eOs5OZiXdWeo51gn27Z8WNVzlusQ%3D%3D" alt=""></router-link>
+        <router-link to="/admin" class="navbar-brand logo-title"><img src="@/assets/images/logo.png" alt="nav-logo"></router-link>
       </div>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,16 +20,6 @@
     </div>
   </nav>
 </template>
-<style>
-  .navbar-light .navbar-brand {
-    color: #a82d2d;
-  }
-  @media (min-width: 768px) {
-    .logout{
-      position: absolute;
-    }
-}
-</style>
 
 <script>
 export default {
