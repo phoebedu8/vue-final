@@ -25,7 +25,7 @@
             <li class="breadcrumb-item active">{{ product.title }}</li>
           </ol>
         </nav>
-        <h2 class="my-3">{{ prod.title }}</h2>
+        <h2 class="my-3">{{ product.title }}</h2>
         <div class="h4 my-2 text-danger">NT${{ $filters.currency(product.price) }} 元
           <del class="h6 ms-2 text-black">原價
             : {{ $filters.currency(product.origin_price) }} 元
