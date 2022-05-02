@@ -23,13 +23,13 @@
     <div class="row justify-content-center">
       <h2 class="text-center text-danger my-5">探索熱銷系列商品</h2>
       <div class="col-12 col-md-4 ">
-        <img class="img-fluid mb-4 mb-md-0 mx-auto d-block" src="@/assets/images/series-icecream.png" alt="series-icecream">
+        <img class="img-fluid mb-4 mb-md-0 mx-auto d-block series-pic" src="@/assets/images/series-icecream.png" alt="series-icecream">
       </div>
       <div class="col-12 col-md-4">
-        <img class="img-fluid mb-4 mb-md-0 mx-auto d-block" src="@/assets/images/series-popsicle.png" alt="series-popsicle">
+        <img class="img-fluid mb-4 mb-md-0 mx-auto d-block series-pic" src="@/assets/images/series-popsicle.png" alt="series-popsicle">
       </div>
       <div class="col-12 col-md-4">
-        <img class="img-fluid mb-4 mb-md-0 mx-auto d-block" src="@/assets/images/series-smoothie.png" alt="series-smoothie">
+        <img class="img-fluid mb-4 mb-md-0 mx-auto d-block series-pic" src="@/assets/images/series-smoothie.png" alt="series-smoothie">
       </div>
     </div>
   </div>
