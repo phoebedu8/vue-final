@@ -67,14 +67,14 @@
               <input
                 class="form-check-input"
                 type="checkbox"
-                checked
                 :true-value="1"
                 :false-value="0"
                 v-model="tempCoupon.is_enabled"
                 id="is_enabled"
-                required>
+                >
               <label class="form-check-label" for="is_enabled">
-                是否啟用
+                <span v-if="tempCoupon.is_enabled">啟用</span>
+                <span v-else>未啟用</span>
               </label>
             </div>
           </div>
@@ -98,7 +98,8 @@ export default {
       tempCoupon: {
         is_enabled: 0
       },
-      due_date: ''
+      due_date: '',
+      is_enabled: 0
     }
   },
   props: ['coupon', 'isNew'],
@@ -115,11 +116,7 @@ export default {
       this.tempCoupon.due_date = Math.floor(new Date(this.due_date) / 1000)
     }
   },
-  mixins: [modalMixin],
-  created () {
-    this.tempCoupon = {
-      is_enabled: 0
-    }
-  }
+  mixins: [modalMixin]
+
 }
 </script>

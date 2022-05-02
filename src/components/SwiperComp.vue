@@ -18,9 +18,10 @@
             {{ item.title }}
           </h5>
           <div class="h5 my-2 text-danger">NT${{ $filters.currency(item.price) }} 元
-          <del class="h6 ms-2 text-black">原價
+          <div><del class="h6 ms-auto text-gray">原價
             : {{ $filters.currency(item.origin_price) }} 元
           </del>
+          </div>
         </div>
         </router-link>
       </div>

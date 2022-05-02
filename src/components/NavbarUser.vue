@@ -16,11 +16,26 @@
       </button>
       <div class="collapse navbar-collapse" ref="navbarcollapse" id="navbarNavAltMarkup" :class="toggleNav ? 'show' : ''">
         <div class="navbar-nav d-flex align-items-center">
-          <router-link to="/about" class="px-2 nav-text" @click="closeNav">品牌介紹</router-link>
+          <router-link
+            to="/about"
+            class="nav-link px-2"
+            @click="closeNav">
+            品牌介紹
+            </router-link>
           <span class="px-1 d-none d-lg-block nav-text-line">/</span>
-          <router-link to="/products?category=all&page=1" class="px-2 nav-text" @click="closeNav">選購產品</router-link>
+          <router-link
+            to="/products?category=all&page=1"
+            class="nav-link px-2"
+            @click="closeNav">
+            選購產品
+            </router-link>
           <span class="px-1 d-none d-lg-block nav-text-line">/</span>
-          <router-link to="/contact" class="px-2 nav-text" @click="closeNav">聯絡我們</router-link>
+          <router-link
+            to="/contact"
+            class="nav-link px-2"
+            @click="closeNav">
+            聯絡我們
+          </router-link>
         </div>
       </div>
     </div>
@@ -48,9 +63,9 @@
                 <img :src="item.product.imageUrl" alt="item.title" class="nav-product-img">
                 <div class="ms-2">
                   <p class="m-0">{{ item.product.title }}</p>
-                  <p class="m-0">NT${{ item.product.price }}
-                    <span class="card-text text-danger ms-1 fs-7">
-                      <del class="text-danger ">NT${{ item.product.origin_price }}</del>
+                  <p class="m-0 text-danger">NT${{ item.product.price }}
+                    <span class="card-text  ms-1 fs-7">
+                      <del class="text-gray ">NT${{ item.product.origin_price }}</del>
                     </span>
                   </p>
                   <input

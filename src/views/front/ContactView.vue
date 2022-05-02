@@ -11,8 +11,8 @@
         <img src="@/assets/images/contact.png" class="w-25 rounded-pill contact-image" alt="contact">
         <div class="my-4">
           <ul class="list-unstyled text-secondary">
-            <li class="lh-lg"> 客服電話：(02)-888-3030 </li>
-            <li class="lh-lg"> 客服信箱：cosmos@service.com </li>
+            <li class="lh-lg"> 客服電話：<a href="tel:+886-2-888-3030">(02)-888-3030</a> </li>
+            <li class="lh-lg"> 客服信箱：<a href="mailto:cosmos@service.com">cosmos@service.com</a> </li>
             <li class="lh-lg"> 客服時間：週一至週五：10:00 am - 20:30 pm </li>
             <li class="lh-lg"> Instgram：@cosmos_tw </li>
             <li class="lh-lg"> Facebook：cosmos_tw </li>

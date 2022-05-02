@@ -7,8 +7,8 @@
       </div>
     </div>
     <div class="container pt-5">
-      <div class="row shopping-process position-relative d-flex justify-content-center align-items-center">
-        <ul class="d-flex justify-content-around w-100 mx-auto ">
+      <div class="row mx-1 mx-md-0 shopping-process position-relative d-flex justify-content-center align-items-center">
+        <ul class="d-flex justify-content-between w-100 mx-auto ">
           <li class="d-flex flex-column align-items-center">
             <div class="d-flex align-items-center justify-content-center circle rounded-circle mb-2 circle-active">
               1 </div>
@@ -31,12 +31,12 @@
       </div>
     </div>
     <div class="container rounded my-5 ">
-      <div class="row cart-title-bar cart-title d-flex align-items-center justify-content-center rounded-top">
+      <div class="row mx-1 mx-md-0 cart-title-bar cart-title d-flex align-items-center justify-content-center rounded-top">
         <div class="col d-flex align-items-center justify-content-center text-white">STEP 1 : 購物車</div>
       </div>
       <!-- 購物車列表 -->
-      <div class="row py-3 justify-content-center border">
-        <div class="my-5" v-if="cart.carts.length<=0">
+      <div class="row mx-1 mx-md-0 py-3 justify-content-center border">
+        <div class="my-5" v-if="cart.carts.length<= 0">
           <p class="text-center mb-4">請加入產品</p>
           <div class="d-flex align-items-center justify-content-center">
             <router-link to="/products">
@@ -87,7 +87,7 @@
                 <div class="input-group my-3">
                   <input type="text" class="form-control" v-model="coupon_code" placeholder="請輸入優惠碼" />
                   <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" @click="addCouponCode">
+                    <button class="btn btn-outline-secondary coupon-btn" type="button" @click="addCouponCode">
                       套用優惠碼
                     </button>
                   </div>
@@ -191,7 +191,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -207,7 +206,9 @@ export default {
       status: {
         loadingItem: ''
       },
-      cart: [],
+      cart: {
+        carts: []
+      },
       isLoading: false,
       coupon_code: '',
       qty: ''
@@ -241,7 +242,7 @@ export default {
             icon: 'success',
             confirmButtonColor: '#dc3545'
           })
-          this.status.loadingItem = ''
+          // this.status.loadingItem = ''
           this.isLoading = false
           this.getCart()
         })

@@ -8,6 +8,8 @@
     <thead>
       <tr>
         <th>購買時間</th>
+        <th>姓名</th>
+        <th>電話</th>
         <th>Email</th>
         <th>購買款項</th>
         <th>應付金額</th>
@@ -19,6 +21,8 @@
       <template v-for="(item, key) in orders" :key="key">
         <tr v-if="orders.length" :class="{ 'text-secondary': !item.is_paid }">
           <td>{{ $filters.date(item.create_at) }}</td>
+          <td>{{ item.user.name }}</td>
+          <td>{{ item.user.tel }}</td>
           <td><span v-text="item.user.email" v-if="item.user"></span></td>
           <td>
             <ul class="list-unstyled">

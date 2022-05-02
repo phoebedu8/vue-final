@@ -47,7 +47,7 @@ export default {
           const { token, expired } = response.data
           document.cookie = `hexToken=${token};expires=${new Date(expired)};`
           this.isLoading = false
-          this.$router.push('/admin')
+          this.$router.push('/admin/newproducts')
           this.$swal({
             title: '登入成功',
             icon: 'success',

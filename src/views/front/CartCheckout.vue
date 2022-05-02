@@ -7,8 +7,8 @@
       </div>
     </div>
     <div class="container mt-5">
-      <div class="row shopping-process position-relative d-flex justify-content-center align-items-center">
-        <ul class="d-flex justify-content-around w-md-75 w-100 w-lg-50 mx-auto ">
+      <div class="row mx-1 mx-md-0 shopping-process position-relative d-flex justify-content-center align-items-center">
+        <ul class="d-flex justify-content-between w-md-75 w-100 w-lg-50 mx-auto ">
           <li class="d-flex flex-column align-items-center">
             <div class="d-flex align-items-center justify-content-center circle rounded-circle mb-2">
               1 </div>
@@ -32,10 +32,10 @@
       </div>
     </div>
     <div class="container rounded my-5">
-      <div class="row cart-title-bar cart-title d-flex align-items-center justify-content-center rounded-top">
+      <div class="row mx-1 mx-md-0 cart-title-bar cart-title d-flex align-items-center justify-content-center rounded-top">
         <div class="col d-flex align-items-center justify-content-center text-white">STEP 3 : 確認訂單</div>
       </div>
-      <div class="row py-3 justify-content-center align-items-top border" @click.prevent="payOrder">
+      <div class="row mx-1 mx-md-0 py-3 justify-content-center align-items-top border" @click.prevent="payOrder">
         <div class="col-12 col-md-6">
           <table class="table align-middle">
             <thead>
@@ -94,7 +94,7 @@
         </div>
         <div class="col-12">
           <div class="text-end" v-if="order.is_paid === false">
-            <button type="button" class="btn btn-danger" @click="payOrder">確認付款去</button>
+            <button type="button" class="btn btn-danger" @click="payOrder">確認付款</button>
           </div>
         </div>
       </div>
@@ -110,9 +110,11 @@ export default {
       order: {
         user: {}
       },
-      orderId: ''
+      orderId: '',
+      isLoading: false
     }
   },
+  inject: ['emitter'],
   methods: {
     getOrder () {
       const url = `${process.env.VUE_APP_API}/api/${process.env.VUE_APP_PATH}/order/${this.orderId}`

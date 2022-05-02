@@ -11,30 +11,64 @@
         </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-12">
               <h3>用戶資料</h3>
               <table class="table">
                 <tbody v-if="tempOrder.user">
                   <tr>
                     <th style="width: 100px">姓名</th>
-                    <td>{{ tempOrder.user.name }}</td>
+                    <input
+                      type="text"
+                      class="form-control rounded-0"
+                      id="name"
+                      placeholder="姓名"
+                      v-model="tempOrder.user.name"
+                    />
                   </tr>
                   <tr>
                     <th>Email</th>
-                    <td>{{ tempOrder.user.email }}</td>
+                    <input
+                      type="text"
+                      class="form-control rounded-0"
+                      id="email"
+                      placeholder="Email"
+                      v-model="tempOrder.user.email"
+                    />
                   </tr>
                   <tr>
                     <th>電話</th>
-                    <td>{{ tempOrder.user.tel }}</td>
+                    <input
+                      type="number"
+                      class="form-control rounded-0"
+                      id="tel"
+                      placeholder="電話"
+                      v-model.number="tempOrder.user.tel"
+                    />
                   </tr>
                   <tr>
                     <th>地址</th>
-                    <td>{{ tempOrder.user.address }}</td>
+                    <input
+                      type="text"
+                      class="form-control rounded-0"
+                      id="address"
+                      placeholder="地址"
+                      v-model="tempOrder.user.address"
+                    />
+                  </tr>
+                  <tr>
+                    <th>留言</th>
+                    <input
+                      type="text"
+                      class="form-control rounded-0"
+                      id="address"
+                      placeholder="留言"
+                      v-model="tempOrder.message"
+                    />
                   </tr>
                 </tbody>
               </table>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-12">
               <h3>訂單細節</h3>
               <table class="table">
                 <tbody>
@@ -104,6 +138,7 @@
           <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
             取消
           </button>
+          <!-- @click="$emit('update-paid', tempOrder)" -->
           <button type="button" class="btn btn-primary" @click="$emit('update-paid', tempOrder)">
             修改付款狀態
           </button>

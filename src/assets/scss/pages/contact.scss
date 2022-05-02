@@ -8,6 +8,23 @@
     background-color: #000;
 }
 
+a[href^="tel:"] {
+    color: #a82d2d;
+    border-bottom: 1px solid #a82d2d;
+    &:hover{
+        color: #d44747;
+    }
+}
+
+a[href^="mailto:"] {
+    color: #a82d2d;
+    border-bottom: 1px solid #a82d2d;
+    &:hover{
+        color: #d44747;
+    }
+}
+    
+
 @media (min-width: 769px) {
     .contact-img {
         height: 300px;

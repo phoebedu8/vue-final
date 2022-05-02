@@ -13,5 +13,5 @@ export default {
 <style lang="scss">
 @import './assets/stylesheets/all';
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
-@import '@/assets/scss/all'
+@import '@/assets/scss/all';
 </style>

@@ -32,11 +32,9 @@ export default {
     const api = `${process.env.VUE_APP_API}/api/user/check`
     this.$http.post(api)
       .then((response) => {
-        this.$httpMessageState(response, '登入')
         this.status = true
-      }).catch((error) => {
+      }).catch(() => {
         this.$router.push('/login')
-        this.$httpMessageState(error.response, '錯誤訊息')
       })
   }
 }

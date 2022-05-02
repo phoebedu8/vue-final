@@ -7,8 +7,8 @@
       </div>
     </div>
     <div class="container mt-5">
-      <div class="row shopping-process position-relative d-flex justify-content-center align-items-center">
-        <ul class="d-flex justify-content-around w-md-75 w-100 w-lg-50 mx-auto ">
+      <div class="row mx-1 mx-md-0 shopping-process position-relative d-flex justify-content-center align-items-center">
+        <ul class="d-flex justify-content-between w-md-75 w-100 w-lg-50 mx-auto ">
           <li class="d-flex flex-column align-items-center">
             <div class="d-flex align-items-center justify-content-center circle rounded-circle mb-2">
               1 </div>
@@ -32,12 +32,12 @@
       </div>
     </div>
     <div class="container rounded my-5">
-      <div class="row cart-title-bar cart-title d-flex align-items-center justify-content-center rounded-top">
+      <div class="row mx-1 mx-md-0 cart-title-bar cart-title d-flex align-items-center justify-content-center rounded-top">
         <div class="col d-flex align-items-center justify-content-center text-white">STEP 2 : 填寫資訊</div>
       </div>
-      <div class="row py-3 justify-content-center border d-none d-md-block">
+      <div class="row mx-1 mx-md-0 py-3 justify-content-center border d-none d-md-block">
         <Form ref="form" v-slot="{ errors }" @submit="createOrder">
-          <div class="row">
+          <div class="row ">
             <div class="col-6">
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
@@ -96,7 +96,7 @@
           </div>
         </Form>
       </div>
-      <div class="row py-3 justify-content-center border d-block d-md-none">
+      <div class="row mx-1 mx-md-0 py-3 justify-content-center border d-block d-md-none">
         <Form ref="form" class="col-md-6" v-slot="{ errors }" @submit="createOrder">
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>

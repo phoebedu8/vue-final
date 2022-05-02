@@ -65,13 +65,11 @@ export default {
     return {
       coupons: {},
       tempCoupon: {
-        title: '',
-        is_enabled: 0,
-        percent: 100,
-        code: ''
+        is_enabled: 0
       },
       isLoading: false,
-      isNew: false
+      isNew: false,
+      is_enabled: 0
     }
   },
   methods: {
@@ -110,7 +108,7 @@ export default {
       this.isLoading = true
       let url = `${process.env.VUE_APP_API}/api/${process.env.VUE_APP_PATH}/admin/coupon`
       let httpMethos = 'post'
-      let data = tempCoupon
+      let data = this.tempCoupon
 
       if (!this.isNew) {
         url = `${process.env.VUE_APP_API}/api/${process.env.VUE_APP_PATH}/admin/coupon/${this.tempCoupon.id}`
@@ -146,11 +144,6 @@ export default {
     }
   },
   created () {
-    if (this.isNew) {
-      this.tempCoupon = {
-        is_enabled: 0
-      }
-    }
     this.getCoupons()
   }
 }

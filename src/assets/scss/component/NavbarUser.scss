@@ -30,7 +30,7 @@
         right: -20px;
     }
     .navbar-nav a{
-        padding: 10px 0;
+        padding: 18px 0;
     }
     
 }
@@ -59,6 +59,20 @@
 .navbar-light .navbar-brand {
     color: #a82d2d;
   }
+
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+    text-shadow: 0 0 5px  rgba(0,0,0,0.5);
+    &:hover{
+        color: #a82d2d;
+        text-shadow: none;
+    }
+    &.active {
+        color: #a82d2d;
+        text-shadow: none;
+        
+    }
+}
 
 @media (min-width: 768px) {
     .nav-cart {

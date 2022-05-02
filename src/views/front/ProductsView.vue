@@ -45,12 +45,12 @@
           <router-link :to="`/product/${ item.id }`" class="card-img card-img-rotate">
             <img :src="item.imageUrl" class="card-img-top rounded-3" alt="item.title">
             <div class="card-body">
-              <h5 class="card-title">{{ item.title }}</h5>
-              <p class="card-text">NT${{ item.price }}
-                <span class="card-text text-danger ms-2 fs-6">
-                  <del class="text-danger ">NT${{ item.origin_price }}</del>
+              <h4 class="card-title">{{ item.title }}</h4>
+              <h5 class="card-text text-danger">NT${{ item.price }}
+                <span class="card-text ms-2 fs-6">
+                  <del class="text-gray ">NT${{ item.origin_price }}</del>
                 </span>
-              </p>
+              </h5>
             </div>
           </router-link>
           <div class="product-btn-group">
